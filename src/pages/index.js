@@ -4,11 +4,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { HomeHeader } from '../utils'
+import img from '../images/bcg/homeBcg.jpeg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3>This is the Home/Index Page</h3>
+    <HomeHeader img={ img }>
+      hello from homeHeader
+    </HomeHeader>
   </Layout>
 )
 
