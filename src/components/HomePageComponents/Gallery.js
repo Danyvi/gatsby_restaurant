@@ -48,11 +48,11 @@ export default function Gallery() {
               </div>
               <div className="item item-2">
                 <Img fluid={ img2 } />
-                <p className="info">awesome pizza</p>
+                <p className="info">awesome pork</p>
               </div>
               <div className="item item-3">
                 <Img fluid={ img3 } />
-                <p className="info">awesome pizza</p>
+                <p className="info">awesome steak</p>
               </div>
             </GalleryWrapper>
           </Section>
@@ -63,6 +63,51 @@ export default function Gallery() {
 }
 
 const GalleryWrapper = styled.div`
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 1rem;
+  .item {
+    position: relative;
+  }
+  .info {
+    position: absolute;
+    top:0;
+    left:0;
+    background: ${ styles.colors.mainYellow };
+    padding: 0.1rem 0.3rem;
+    text-transform: capitalize;
+  }
+
+  @media (min-width:576px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    .gatsby-image-wrapper{
+      height:100%;
+    }
+
+    grid-template-areas: 
+    'img_one img_one img_two img_two'
+    'img_one img_one img_three img_three';
+
+    .item-1{
+      grid-area: img_one;
+    }
+  
+    .item-2{
+      grid-area: img_two;
+    }
+  
+    .item-3{
+      grid-area: img_three;
+    }
+  }
 
 `
 
