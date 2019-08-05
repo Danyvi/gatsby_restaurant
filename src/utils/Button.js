@@ -22,4 +22,13 @@ const BannerButton = styled.button`
 // this button does not have the position so it can be used in different situation.
 // you have to specify it in the style where you want to use it (in this case in index.js)
 
-export { BannerButton }
+const SectionButton = styled(BannerButton)`
+  color: ${ styles.colors.mainBlack };
+  ${ styles.border({ color:`${ styles.colors.mainBlack }` })};
+  &:hover{
+    background: ${ styles.colors.mainBlack };
+    color: ${styles.colors.mainYellow };
+  }
+`
+
+export { BannerButton, SectionButton }
