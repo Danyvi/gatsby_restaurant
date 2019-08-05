@@ -11,7 +11,7 @@ export default class QuickInfo extends Component {
         <Title message="let us tell you" title="our mission" />
         <QuickInfoWrapper>
           <p className="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At perferendis, aut nemo magni maiores neque dolores ab assumenda aperiam omnis mollitia architecto et adipisci nulla corporis repellat natus provident minus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem cum deserunt laudantium consectetur assumenda totam sit temporibus accusantium nisi at provident nam animi soluta nulla in exercitationem natus culpa. Illum impedit sit dicta commodi quam iste consectetur magni aut veniam, itaque laudantium nesciunt harum dolorum doloribus modi totam. Accusantium.
           </p>
           <Link to="/about/" style={ { textDecoration: 'none' } }>
             <SectionButton style={ { margin: '2rem auto'} }>about</SectionButton>
